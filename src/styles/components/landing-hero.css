@@ -1,0 +1,44 @@
+.landingHero {
+  /* Overall layout and positioning */
+}
+
+.landingHero > div {
+  /* Full-width background */
+  @apply relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32;
+}
+
+.landingHero > div > div.mx-auto.max-w-7xl.px-6.lg\:px-8 {
+  /* Content container */
+  @apply mx-auto max-w-7xl px-6 lg:px-8;
+}
+
+.landingHero > div > div.mx-auto.max-w-7xl.px-6.lg\:px-8 > div.mx-auto.max-w-2xl {
+  /* Text container */
+  @apply mx-auto max-w-2xl;
+}
+
+.landingHero > div > div.mx-auto.max-w-7xl.px-6.lg\:px-8 h2 {
+  /* Main heading */
+  @apply text-3xl font-bold tracking-tight text-white sm:text-4xl font-roboto;
+}
+
+.landingHero > div > div.mx-auto.max-w-7xl.px-6.lg\:px-8 p {
+  /* Paragraph text */
+  @apply mt-6 text-lg leading-8 text-gray-300;
+}
+
+/* Button styles */
+.landingHero > div > div.mx-auto.max-w-7xl.px-6.lg\:px-8 > div.mt-10.flex.items-center.justify-center > button {
+  @apply inline-flex items-center rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500;
+}
+
+/* 3D Scene */
+.landingHero > div > div.mx-auto.max-w-7xl.px-6.lg\:px-8 > div.absolute.inset-0.-z-10.h-full.w-full.object-cover {
+  /* 3D scene container */
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
