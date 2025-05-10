@@ -1,0 +1,22 @@
+.minimalLayout {
+  @apply min-h-screen flex flex-col font-roboto;
+}
+
+.minimalLayout > header {
+  /* Styles for the header, if needed */
+}
+
+.minimalLayout > main {
+  @apply flex-grow container mx-auto py-8;
+}
+
+.minimalLayout > footer {
+  /* Styles for the footer, if needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .minimalLayout > main {
+    @apply py-4 px-4; /* Adjust padding for smaller screens */
+  }
+}
