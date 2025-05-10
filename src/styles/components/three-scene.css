@@ -1,0 +1,29 @@
+.threeSceneContainer {
+  /* Full viewport coverage */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+/* Add any specific styling for the Three.js canvas container here if needed */
+/* For example, to ensure it fills the container: */
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .threeSceneContainer {
+    /* Adjust styles for small screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .threeSceneContainer {
+    /* Adjust styles for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .threeSceneContainer {
+    /* Adjust styles for large screens */
+  }
+}
