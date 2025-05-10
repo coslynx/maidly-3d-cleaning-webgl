@@ -1,0 +1,36 @@
+.roomSceneContainer {
+  /* Overall layout and positioning */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.roomScene {
+  /* Styles for the 3D scene itself */
+  width: 80%; /* Adjust as needed */
+  height: 80%; /* Adjust as needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .roomSceneContainer {
+    /* Adjust styles for small screens */
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .roomSceneContainer {
+    /* Adjust styles for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .roomSceneContainer {
+    /* Adjust styles for large screens */
+  }
+}
