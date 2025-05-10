@@ -1,0 +1,32 @@
+.modelShowcasePage {
+  @apply flex items-center justify-center h-screen w-screen;
+
+  & > div {
+    @apply text-center;
+  }
+
+  & .text-red-500 {
+    @apply text-red-500;
+  }
+
+  & .progress-bar {
+    @apply text-center;
+  }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .modelShowcasePage {
+    & > div {
+      @apply text-sm; /* Smaller text size */
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .modelShowcasePage {
+    & > div {
+      @apply px-4; /* Add some padding */
+    }
+  }
+}
