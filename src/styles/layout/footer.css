@@ -1,0 +1,22 @@
+.footer {
+  @apply bg-primary-white py-4;
+}
+
+.footer > div {
+  @apply container mx-auto text-center;
+}
+
+.footer > div > p {
+  @apply text-primary-dark-gray;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer > div {
+    @apply px-4; /* Adjust padding for smaller screens */
+  }
+
+  .footer > div > p {
+    @apply text-sm; /* Adjust font size for smaller screens */
+  }
+}
