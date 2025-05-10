@@ -1,0 +1,47 @@
+.services-section {
+  @apply py-12;
+}
+
+.services-section > div {
+  @apply container mx-auto;
+}
+
+.services-section > div > h2 {
+  @apply text-3xl font-bold text-primary-dark-gray mb-8 text-center font-roboto;
+}
+
+.services-section > div > div.grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.services-section > div > div.grid > div {
+  @apply bg-primary-white rounded-lg shadow-md overflow-hidden flex flex-col justify-between;
+}
+
+.services-section > div > div.grid > div > div > img {
+  @apply w-full h-48 object-cover;
+}
+
+.services-section > div > div.grid > div > div.p-4 {
+  @apply p-4;
+}
+
+.services-section > div > div.grid > div > div.p-4 > h3 {
+  @apply text-xl font-semibold text-primary-dark-gray mb-2 font-roboto;
+}
+
+.services-section > div > div.grid > div > div.p-4 > p {
+  @apply text-secondary-gray text-sm mb-4;
+}
+
+.services-section > div > div.grid > div > div.p-4 > ul {
+  @apply list-disc pl-5 text-secondary-gray text-sm mb-4;
+}
+
+.services-section > div > div.grid > div > div.p-4 > div > a {
+  @apply inline-block bg-accent-blue text-primary-white py-2 px-4 rounded-md hover:bg-indigo-400 transition-colors duration-200 text-sm font-semibold text-center;
+}
+
+.services-section > div > div.grid > div > div.p-4 > a {
+  @apply inline-block bg-accent-blue text-primary-white py-2 px-4 rounded-md hover:bg-indigo-400 transition-colors duration-200 text-sm font-semibold text-center;
+}
