@@ -1,0 +1,45 @@
+.contactSection {
+  @apply py-12;
+}
+
+.contactSection > div {
+  @apply container mx-auto;
+}
+
+.contactSection > div > h2 {
+  @apply text-3xl font-bold text-primary-dark-gray mb-8 text-center font-roboto;
+}
+
+.contactSection > div > div.text-center > p.text-green-500 {
+  @apply text-green-500 text-center;
+}
+
+.contactSection > div > div.text-center > p.text-red-500 {
+  @apply text-red-500 text-center;
+}
+
+.contactSection > div > form {
+  @apply max-w-lg mx-auto;
+}
+
+.contactSection > div > form > div > label {
+  @apply block text-primary-dark-gray text-sm font-bold mb-2;
+}
+
+.contactSection > div > form > div > input[type='text'],
+.contactSection > div > form > div > input[type='email'],
+.contactSection > div > form > div > textarea {
+  @apply shadow appearance-none border rounded w-full py-2 px-3 text-primary-dark-gray leading-tight focus:outline-none focus:shadow-outline;
+}
+
+.contactSection > div > form > div > p.text-red-500 {
+  @apply text-red-500 text-xs italic;
+}
+
+.contactSection > div > form > div.flex > button {
+  @apply inline-block bg-accent-blue text-primary-white py-2 px-4 rounded-md hover:bg-indigo-400 transition-colors duration-200 text-sm font-semibold;
+}
+
+.contactSection > div > div.mt-8 {
+  @apply mt-8;
+}
