@@ -1,0 +1,100 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import 'src/styles/base.css';
+
+/* Modern CSS reset (Meyer reset) - modified */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Base styles */
+body {
+  font-family: 'Roboto', sans-serif; /* Consistent with tailwind.config.js */
+  color: #1A202C; /* primary-dark-gray from tailwind.config.js */
+  background-color: #FFFFFF; /* primary-white from tailwind.config.js */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Example of using a CSS variable (define in :root if needed) */
+:root {
+  --base-line-height: 1.5;
+}
+
+body {
+  line-height: var(--base-line-height);
+}
+
+/* Focus styles for accessibility */
+*:focus {
+    outline: 2px solid #4299E1; /* accent-blue from tailwind.config.js */
+    outline-offset: 2px;
+}
+
+/* Responsive typography (example) */
+@media (min-width: 640px) { /* sm breakpoint from tailwind.config.js */
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) { /* lg breakpoint from tailwind.config.js */
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Ensure media elements don't overflow their container */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
