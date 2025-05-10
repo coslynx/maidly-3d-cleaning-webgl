@@ -1,0 +1,31 @@
+.testimonialsSection {
+  @apply py-12;
+}
+
+.testimonialsSection > div {
+  @apply container mx-auto;
+}
+
+.testimonialsSection > div > h2 {
+  @apply text-3xl font-bold text-primary-dark-gray mb-8 text-center font-roboto;
+}
+
+.testimonialsSection > div > div.grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.testimonialsSection > div > div.grid > div {
+  @apply bg-primary-white rounded-lg shadow-md p-6;
+}
+
+.testimonialsSection > div > div.grid > div > img {
+  @apply w-24 h-24 rounded-full object-cover mb-4;
+}
+
+.testimonialsSection > div > div.grid > div > p.text-secondary-gray {
+  @apply text-secondary-gray mb-2;
+}
+
+.testimonialsSection > div > div.grid > div > p.text-primary-dark-gray {
+  @apply text-primary-dark-gray font-semibold;
+}
