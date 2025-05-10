@@ -1,0 +1,30 @@
+.header {
+  @apply bg-primary-white shadow-md py-4;
+}
+
+.header > div {
+  @apply container mx-auto flex items-center justify-between;
+}
+
+.header > div > a {
+  @apply text-2xl font-bold text-primary-dark-gray font-roboto;
+}
+
+.header > div > nav > ul {
+  @apply flex space-x-6;
+}
+
+.header > div > nav > ul > li > a {
+  @apply text-primary-dark-gray hover:text-accent-blue transition-colors duration-200;
+}
+
+/* Example responsive adjustments */
+@media (max-width: 768px) {
+  .header > div {
+    @apply flex-col items-center text-center;
+  }
+
+  .header > div > nav > ul {
+    @apply flex-col space-x-0 space-y-2 mt-2;
+  }
+}
