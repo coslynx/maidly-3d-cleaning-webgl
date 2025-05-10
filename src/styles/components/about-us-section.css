@@ -1,0 +1,107 @@
+.aboutUsSection {
+  @apply py-12;
+}
+
+.aboutUsSection > div {
+  @apply container mx-auto;
+}
+
+.aboutUsSection > div > h2 {
+  @apply text-3xl font-bold text-primary-dark-gray mb-8 text-center font-roboto;
+}
+
+.aboutUsSection > div > div.mb-8 > h3 {
+  @apply text-2xl font-semibold text-primary-dark-gray mb-4 font-roboto;
+}
+
+.aboutUsSection > div > div.mb-8 > p {
+  @apply text-secondary-gray;
+}
+
+.aboutUsSection > div > div.mb-8 > ul {
+  @apply list-disc pl-5 text-secondary-gray;
+}
+
+.aboutUsSection > div > div.mb-8 > ul > li {
+  @apply list-item;
+}
+
+.aboutUsSection > div > div.mb-8 > div.grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+}
+
+.aboutUsSection > div > div.mb-8 > div.grid > div {
+  @apply bg-primary-white rounded-lg shadow-md p-4;
+}
+
+.aboutUsSection > div > div.mb-8 > div.grid > div > h4 {
+  @apply text-xl font-semibold text-primary-dark-gray font-roboto;
+}
+
+.aboutUsSection > div > div.mb-8 > div.grid > div > p {
+  @apply text-secondary-gray;
+}
+
+.aboutUsSection > div > div.mb-8 > h3 {
+  @apply text-2xl font-semibold text-primary-dark-gray mb-4 font-roboto;
+}
+
+.aboutUsSection > div > div.mb-8 > p {
+  @apply text-secondary-gray;
+}
+
+.aboutUsSection > div > div.mb-8 > ul {
+  @apply list-disc pl-5 text-secondary-gray;
+}
+
+.aboutUsSection > div > div.mb-8 > ul > li {
+  @apply list-item;
+}
+
+.aboutUsSection > div > div.mb-8 > div.grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+}
+
+.aboutUsSection > div > div.mb-8 > div.grid > div {
+  @apply bg-primary-white rounded-lg shadow-md p-4;
+}
+
+.aboutUsSection > div > div.mb-8 > div.grid > div > h4 {
+  @apply text-xl font-semibold text-primary-dark-gray font-roboto;
+}
+
+.aboutUsSection > div > div.mb-8 > div.grid > div > p {
+  @apply text-secondary-gray;
+}
+
+.aboutUsSection > div > div > h3 {
+    @apply text-2xl font-semibold text-primary-dark-gray mb-4 text-center font-roboto;
+}
+
+.aboutUsSection > div > div > div.grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.aboutUsSection > div > div > div.grid > div {
+    @apply bg-primary-white rounded-lg shadow-md overflow-hidden;
+}
+
+.aboutUsSection > div > div > div.grid > div > img {
+    @apply w-full h-48 object-cover;
+}
+
+.aboutUsSection > div > div > div.grid > div > div.p-4 {
+    @apply p-4;
+}
+
+.aboutUsSection > div > div > div.grid > div > div.p-4 > h4 {
+    @apply text-xl font-semibold text-primary-dark-gray mb-2 font-roboto;
+}
+
+.aboutUsSection > div > div > div.grid > div > div.p-4 > p.text-secondary-gray.text-sm.mb-2 {
+    @apply text-secondary-gray text-sm mb-2;
+}
+
+.aboutUsSection > div > div > div.grid > div > div.p-4 > p.text-secondary-gray.text-sm {
+    @apply text-secondary-gray text-sm;
+}
