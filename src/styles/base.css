@@ -1,0 +1,99 @@
+:root {
+  --primary-white: #FFFFFF;
+  --primary-dark-gray: #1A202C;
+  --secondary-gray: #4A5568;
+  --accent-blue: #4299E1;
+  --base-line-height: 1.5;
+  --font-family-base: 'Roboto', sans-serif;
+  --focus-outline-color: #4299E1;
+}
+
+/* Modern CSS reset (Meyer reset) - modified */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: var(--base-line-height);
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Base styles */
+body {
+  font-family: var(--font-family-base);
+  color: var(--primary-dark-gray);
+  background-color: var(--primary-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus styles for accessibility - only show on keyboard navigation */
+*:focus {
+    outline: 0; /*reset*/
+}
+
+*:focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+}
+
+/* Responsive typography */
+@media (min-width: 640px) { /* sm breakpoint from tailwind.config.js */
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) { /* lg breakpoint from tailwind.config.js */
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Media elements */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
