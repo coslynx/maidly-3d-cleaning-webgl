@@ -1,0 +1,81 @@
+{
+  "name": "bookmaid-simple-cleaning-scheduling",
+  "version": "1.0.0",
+  "description": "Simple Cleaning Scheduling with 3D Environment",
+  "main": "src/main.tsx",
+  "private": true,
+  "type": "module",
+  "author": "AI Assistant",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "three": "0.176.0",
+    "@types/three": "0.176.0",
+    "gsap": "3.13.0",
+    "@react-three/fiber": "9.1.2",
+    "framer-motion": "12.10.5",
+    "react": "19.1.0",
+    "@emailjs/browser": "4.4.1",
+    "@react-three/drei": "10.0.7",
+    "react-dom": "19.1.0",
+    "tailwindcss": "4.1.6"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "vite": "latest",
+    "eslint": "latest",
+    "prettier": "latest",
+    "jest": "latest",
+    "@types/jest": "latest",
+    "@testing-library/react": "latest",
+    "@testing-library/jest-dom": "latest"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
+    "format": "prettier src/**/*.{js,jsx,ts,tsx,json} --write",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.ts"
+    ],
+    "moduleNameMapper": {
+      "\\.(gif|ttf|eot|svg|png)$": "<rootDir>/test/__mocks__/fileMock.js",
+      "^@components(.*)$": "<rootDir>/src/components$1",
+      "^@pages(.*)$": "<rootDir>/src/pages$1",
+      "^@styles(.*)$": "<rootDir>/src/styles$1",
+      "^@utils(.*)$": "<rootDir>/src/utils$1",
+      "^@hooks(.*)$": "<rootDir>/src/hooks$1"
+    }
+  }
+}
